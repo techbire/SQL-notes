@@ -23,7 +23,7 @@ Welcome to the SQL Handwritten Notes repository! Here, you'll find a collection 
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/sql-notes.git
+   git clone https://github.com/techbire/sql-notes.git
    ```
 
 2. Browse the "notes" directory to access individual PDFs for each topic.
@@ -51,6 +51,6 @@ If you have additional handwritten notes, improvements, or corrections, contribu
 ## Credits
 
 - Ansh Gupta
-- Contributors (if any)
+<!--Contributors (if any)-->
 
 Feel free to reach out if you have any questions or suggestions. Happy studying and coding!

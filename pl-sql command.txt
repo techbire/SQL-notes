@@ -1,0 +1,94 @@
+PL-SQL COMMAND
+
+1.STRUCTURE
+
+DECLARE 
+   <declarations section> 
+BEGIN 
+   <executable command(s)>
+EXCEPTION 
+   <exception handling> 
+END;
+
+//--------------------------------------------------------------
+
+2.The 'Hello World' Example
+
+
+DECLARE 
+   message  varchar2(20):= 'Hello, World!'; 
+BEGIN 
+   dbms_output.put_line(message); 
+END; 
+
+//--------------------------------------------------------------
+
+3. SUMMATION
+
+DECLARE 
+   a integer := 10; 
+   b integer := 20; 
+   c integer; 
+   f real; 
+BEGIN 
+   c := a + b; 
+   dbms_output.put_line('Value of c: ' || c); 
+   f := 70.0/3.0; 
+   dbms_output.put_line('Value of f: ' || f); 
+END; 
+
+//--------------------------------------------------------------
+
+3. THERE IS MANY CONDITIONAL STATEMENT
+
+SUCH AS: IF, ELSIF AND ELSE statement
+
+EG: GRADING SYSTEM:
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+    score NUMBER;
+    grade VARCHAR2(2);
+BEGIN
+    -- Input the score
+    score := &score;
+
+    -- Determine the grade based on the score
+    IF score >= 90 THEN
+        grade := 'A';
+    ELSIF score >= 80 THEN
+        grade := 'B';
+    ELSIF score >= 70 THEN
+        grade := 'C';
+    ELSIF score >= 60 THEN
+        grade := 'D';
+    ELSE
+        grade := 'F';
+    END IF;
+
+    -- Output the grade
+    DBMS_OUTPUT.PUT_LINE('The grade for the score ' || score || ' is ' || grade);
+END;
+
+//--------------------------------------------------------------
+
+4. LOOPS 
+
+EG: LOOPS TO DISPLAY NUMBERS FROM 1 TO 10 ALONG WITH THEIR SQUARES:
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+    i INTEGER := 1;
+    square INTEGER;
+BEGIN
+    -- Loop to display numbers and their squares from 1 to 10
+    WHILE i <= 10 LOOP
+        square := i * i;
+        DBMS_OUTPUT.PUT_LINE('Number: ' || i || ', Square: ' || square);
+        i := i + 1;
+    END LOOP;
+END;
+
+//--------------------------------------------------------------

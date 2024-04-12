@@ -19,6 +19,9 @@ Welcome to the SQL Handwritten Notes repository! Here, you'll find a collection 
 5. **Select Queries and AGGREGATE Function.pdf**
    - Detailed notes on select queries and the use of aggregate functions.
 
+6. **PL-SQL Commands.txt**
+      - Basic commands on PL-SQL.
+
 ## How to Use
 
 1. Clone the repository to your local machine.
